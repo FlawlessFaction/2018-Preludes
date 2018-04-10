@@ -9,7 +9,7 @@ function New-Password {
         [int]$maxNA = 4
     )
     While($true){
-        $pswd = [membersip]::GeneratePassword($length,$MaxNA)
+        $pswd = [membership]::GeneratePassword($length,$MaxNA)
         ## at least 1 letter and numeric
         ## to match AD complexity requirements
         switch ($pswd){
